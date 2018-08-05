@@ -27,6 +27,7 @@ public static void main(String[] args) {
 	
 System.setProperty("webdriver.chrome.driver","/home/edureka/chromedriver");
 ChromeOptions chromeOptions = new ChromeOptions();
+chromeOptions.addArguments("--headless");
 WebDriver driver = new ChromeDriver(chromeOptions);
 System.out.println("Hi, Welcome to Edureka's WebDriver assignment");
 driver.get("http://localhost:3001");
